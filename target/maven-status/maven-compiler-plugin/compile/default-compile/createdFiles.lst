@@ -6,6 +6,7 @@ com\mycompany\proyecto_final\modelo\ResidenteApartamentoDAO.class
 com\mycompany\proyecto_final\modelo\Persona.class
 com\mycompany\proyecto_final\controlador\CntResidente.class
 com\mycompany\proyecto_final\modelo\Apartamento.class
+com\mycompany\proyecto_final\vista\BarraProgreso$1.class
 com\mycompany\proyecto_final\modelo\PropietarioApartamentoDAO.class
 com\mycompany\proyecto_final\modelo\PersonaDAO.class
 com\mycompany\proyecto_final\controlador\CntNumerosApartamentos.class
@@ -21,6 +22,7 @@ com\mycompany\proyecto_final\ProyectoFinalApartamentos.class
 com\mycompany\proyecto_final\vista\FrmApartamentos$1.class
 com\mycompany\proyecto_final\vista\FrmMenu.class
 com\mycompany\proyecto_final\modelo\PropietarioApartamento.class
+com\mycompany\proyecto_final\vista\BarraProgreso.class
 com\mycompany\proyecto_final\vista\FrmApartamentos.class
 com\mycompany\proyecto_final\modelo\HibernateUtil.class
 com\mycompany\proyecto_final\vista\FrmMenu$3.class

@@ -2,10 +2,13 @@ package com.mycompany.proyecto_final.controlador;
 
 import com.mycompany.proyecto_final.modelo.Apartamento;
 import com.mycompany.proyecto_final.modelo.ApartamentoDAO;
+import com.mycompany.proyecto_final.vista.BarraProgreso;
 import com.mycompany.proyecto_final.vista.FrmApartamentos;
 import com.mycompany.proyecto_final.vista.FrmNumeroApartamentos;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class CntNumerosApartamentos implements ActionListener {
@@ -50,7 +53,6 @@ public class CntNumerosApartamentos implements ActionListener {
                 }
                 numeroApartamento = 100;
             }
-            JOptionPane.showMessageDialog(null, "Almacenado");
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Error Ingrese numeros");
         }
@@ -60,6 +62,9 @@ public class CntNumerosApartamentos implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == frmNumeroApartamentos.getBtnInsertar()) {
             crearListadoApartamentos();
+            BarraProgreso barraProgreso = new BarraProgreso();
+            barraProgreso.setVisible(true);
+            barraProgreso.iniciarProceso();    
         }
     }
 }
